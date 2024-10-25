@@ -17,5 +17,9 @@ public class PostsRunner {
     Karate testPostPosts() {
         return Karate.run("update-posts").tags("@UpdatePosts").relativeTo(getClass());
     }*/
+    @Karate.Test
+    Karate testPostPosts() {
+        return Karate.run("delete-posts").tags("@DeletePosts").relativeTo(getClass());
+    }
 
 }
