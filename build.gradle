@@ -32,3 +32,8 @@ sourceSets {
         }
     }
 }
+
+task karateReport(type: Copy) {
+    from "$buildDir/reports/tests/test"
+    into "$buildDir/karate-reports"
+}
