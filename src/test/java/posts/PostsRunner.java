@@ -11,11 +11,11 @@ public class PostsRunner {
     @Karate.Test
     Karate testPostPosts() {
         return Karate.run("create-posts").tags("@CreatePosts").relativeTo(getClass());
-    }*/
+    }
 
     @Karate.Test
     Karate testPostPosts() {
         return Karate.run("update-posts").tags("@UpdatePosts").relativeTo(getClass());
-    }
+    }*/
 
 }
